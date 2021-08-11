@@ -3,7 +3,7 @@
  */
 
 /**
- * 
+ * @description 格式化文件大小
  * @param { Number } value 
  * @returns 格式化后的人性化文件大小：如输入 10000，输出 "9.77KB"
  */

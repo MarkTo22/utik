@@ -21,3 +21,50 @@ console.log('fileSize', fileSize);
 
 ```
 
+# Docs
+
+### 1.RegExp List
+
+````js
+// todo
+import { reg } from 'utik';
+reg.qq.test("123456")
+
+// todo
+import utik from 'utik';
+utik.email.test("123@gmail.com");
+````
+
+| 关键字        | 说明                                                         | 版本     |
+| ------------- | ------------------------------------------------------------ | -------- |
+| `specialWord` | 匹配特殊字符                                                 | `v1.0.0` |
+| `phone`       | 校验手机号码                                                 | `v1.0.0` |
+| `tel`         | 校验国内电话号码                                             | `v1.0.0` |
+| `telPhone`    | 校验电话号码（包括手机号）                                   | `v1.0.0` |
+| `zn`          | 匹配中文字符                                                 | `v1.0.0` |
+| `idcard`      | 校验身份证号码                                               | `v1.0.0` |
+| `idcard_1`    | 校验身份证号码（弱校验）                                     | `v1.0.0` |
+| `account`     | 校验账号（字母开头，长度5-16之间，允许字母数字下划线）       | `v1.0.0` |
+| `password`    | 校验密码（必须包含大小写字母和数字的组合，不能使用特殊字符，长度8-10之间） | `v1.0.0` |
+| `password_1`  | 校验密码（字母开头，长度6-18之间，只能包含字母、数字和下划线） | `v1.0.0` |
+| `qq`          | 校验QQ                                                       | `v1.0.0` |
+| `email`       | 校验邮箱号                                                   | `v1.0.0` |
+
+### 1.Format List
+
+```js
+// todo
+import { format } from 'utik';
+format.fileSizeFMT('10000'); //"9.77KB"
+
+// todo
+import utik from 'utik';
+utik.fileSizeFMT('10000'); //"9.77KB"
+```
+
+
+
+| 关键字        | 说明                       | 版本     |
+| ------------- | -------------------------- | -------- |
+| `fileSizeFMT` | 格式化文件大小，基数为1024 | `v1.0.0` |
+
