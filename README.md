@@ -68,3 +68,34 @@ utik.fileSizeFMT('10000'); //"9.77KB"
 | ------------- | -------------------------- | -------- |
 | `fileSizeFMT` | 格式化文件大小，基数为1024 | `v1.0.0` |
 
+### 3.节流防抖列表
+
+```js
+// todo
+import utik from 'utik';
+
+const fn = (num) => {
+    console.log('fn...', num);
+}
+const debounceFn = utik.debounce(fn, 500);
+const throttleFn = utik.throttle(fn, 500);
+
+setInterval(()=>{
+    debounceFn(1);
+    debounceFn(2);
+    debounceFn(3);
+}, 600) //3、3、3...
+
+// setInterval(()=>{
+//     throttleFn(1);
+//     throttleFn(2);
+//     throttleFn(3);
+// }, 100) //1、1、1...
+```
+
+
+
+| 关键字     | 说明         | 版本     |
+| ---------- | ------------ | -------- |
+| `throttle` | 简单节流实现 | `v1.0.1` |
+| `debounce` | 简单防抖实现 | `v1.0.1` |

@@ -1,6 +1,8 @@
 
 import reg from './reg.js'
 import format from './format.js'
+import { default as debounce } from './debounce.js'
+import { default as throttle } from './throttle.js'
 
 const utik = {}
 
@@ -18,6 +20,8 @@ utik.qq = reg.qq;
 utik.email = reg.email;
 
 utik.fileSizeFMT = format.fileSizeFMT;
+utik.debounce = debounce;
+utik.throttle = throttle;
 
 
 export default utik;
