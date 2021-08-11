@@ -23,7 +23,7 @@ console.log('fileSize', fileSize);
 
 # Docs
 
-### 1.RegExp List
+### 1.正则列表（reg）
 
 ````js
 // todo
@@ -50,7 +50,7 @@ utik.email.test("123@gmail.com");
 | `qq`          | 校验QQ                                                       | `v1.0.0` |
 | `email`       | 校验邮箱号                                                   | `v1.0.0` |
 
-### 1.Format List
+### 2.格式化列表（format）
 
 ```js
 // todo
