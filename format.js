@@ -1,6 +1,8 @@
 /**
- * 格式化：单位、数字、文件大小...
+ * 格式化模块：单位、数字、文件大小...
  */
+
+import { isNum } from './comm.js';
 
 /**
  * @description 格式化文件大小
@@ -24,6 +26,30 @@ export const fileSizeFMT = (value) => {
     return filesize+units[index];
 }
 
+/**
+ * @description 货币数值格式化（以千位为单位，用“,”分割）
+ * @param {Number | String} num 
+ * @returns in[1234] out["123,4"]
+ */
+export const toThousands = (num) => {
+    return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+}
+
+/**
+ * @description 数值百分比格式化，默认保留小数点后2位
+ *              注：toFixed 采取“四舍六入五取偶法”
+ * @param {Number | String} num 
+ * @returns in[0.1] out["10%"]
+ */
+export const toPercent = (num) => {
+    if( !isNum(num) ) {
+        return;
+    }
+    return (num * 100).toFixed(2)+"%"
+}
+
 export default {
-    fileSizeFMT
+    fileSizeFMT,
+    toThousands,
+    toPercent
 }
