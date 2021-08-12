@@ -1,0 +1,23 @@
+{
+  "name": "utik",
+  "version": "1.0.1",
+  "description": "a common utils, that i think you maybe need it.",
+  "main": "utik.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkTo22/utik.git"
+  },
+  "keywords": [
+    "util",
+    "utik"
+  ],
+  "author": "MarkTo22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkTo22/utik/issues"
+  },
+  "homepage": "https://github.com/MarkTo22/utik#readme"
+}
