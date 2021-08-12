@@ -29,3 +29,8 @@ export const enBase64 = (str) => {
  export const deBase64 = (code) => {
 	return decodeURIComponent(window.atob(code));
 }
+
+export default {
+    enBase64,
+    deBase64
+}
